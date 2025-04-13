@@ -1,6 +1,6 @@
 import { 
   MicIcon, 
-  WaveIcon, 
+  ActivityIcon, 
   MusicIcon, 
   HeadphonesIcon, 
   SpeakerIcon, 
@@ -15,7 +15,7 @@ const servicesData = [
     description: "Профессиональная озвучка аниме персонажей с учетом характера и эмоций"
   },
   {
-    icon: <WaveIcon className="w-12 h-12 text-anime-pink" />,
+    icon: <ActivityIcon className="w-12 h-12 text-anime-pink" />,
     title: "Саунд-дизайн",
     description: "Создание уникальных звуковых эффектов и атмосферы для вашего аниме"
   },
