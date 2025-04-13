@@ -61,6 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Кастомные цвета для аниме студии
+				anime: {
+					purple: '#7928CA',
+					pink: '#FF0080',
+					blue: '#0070F3',
+					cyan: '#50E3C2',
+					dark: '#1A1A2E',
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				// Добавим анимацию звуковой волны
+				'sound-wave': {
+					'0%, 100%': { transform: 'scaleY(1)' },
+					'50%': { transform: 'scaleY(2)' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'sound-wave': 'sound-wave 1s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-anime': 'linear-gradient(to right, #7928CA, #FF0080)',
+				'gradient-sound': 'linear-gradient(to right, #0070F3, #50E3C2)',
 			}
 		}
 	},
